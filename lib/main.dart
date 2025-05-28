@@ -54,6 +54,7 @@ class Home extends HookWidget {
                 children: [
                   Text(
                     "Receita ${rota[rota.length - 1]} ${rota.replaceAll(rota, "Receita ")}",
+                    style: Theme.of(context).textTheme.displayLarge,
                   ),
                   IconButton(
                     onPressed: () {

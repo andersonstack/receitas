@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyStyles {
   static ThemeData aplyTheme() {
@@ -17,6 +18,28 @@ class MyStyles {
         onBackground: Color(0xFFFF8658),
       ),
       scaffoldBackgroundColor: Colors.black,
+      textTheme: TextTheme(
+        displayLarge: TextStyle(
+          fontFamily: GoogleFonts.poppins().fontFamily,
+          fontWeight: FontWeight.bold,
+          fontSize: 24.0,
+        ),
+        displayMedium: TextStyle(
+          fontFamily: GoogleFonts.poppins().fontFamily,
+          fontWeight: FontWeight.normal,
+          fontSize: 20.0,
+        ),
+        bodyLarge: TextStyle(
+          fontFamily: GoogleFonts.poppins().fontFamily,
+          fontWeight: FontWeight.bold,
+          fontSize: 18.0,
+        ),
+        bodyMedium: TextStyle(
+          fontFamily: GoogleFonts.poppins().fontFamily,
+          fontWeight: FontWeight.normal,
+          fontSize: 15.0,
+        ),
+      ),
     );
   }
 }
