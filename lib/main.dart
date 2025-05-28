@@ -44,25 +44,34 @@ class Home extends HookWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: Text("Receitas de POO")),
+      appBar: AppBar(
+        title: Text(
+          "Receitas de POO",
+          style: Theme.of(context).textTheme.displayLarge,
+        ),
+      ),
       body: ListView(
         children:
             receitas.map((receita) {
               final rota = receita['rota'] as String;
 
-              return Row(
-                children: [
-                  Text(
-                    "Receita ${rota[rota.length - 1]} ${rota.replaceAll(rota, "Receita ")}",
-                    style: Theme.of(context).textTheme.displayLarge,
-                  ),
-                  IconButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, rota);
-                    },
-                    icon: Icon(Icons.arrow_right),
-                  ),
-                ],
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "${rota.replaceAll(rota, "Receita ")} ${rota[rota.length - 1]}",
+                      style: Theme.of(context).textTheme.displayMedium,
+                    ),
+                    IconButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, rota);
+                      },
+                      icon: Icon(Icons.arrow_right, size: 30.0),
+                    ),
+                  ],
+                ),
               );
             }).toList(),
       ),
