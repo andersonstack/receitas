@@ -23,6 +23,8 @@ class MyStyles {
           fontFamily: GoogleFonts.poppins().fontFamily,
           fontWeight: FontWeight.bold,
           fontSize: 24.0,
+          wordSpacing: 5.0,
+          letterSpacing: 2.0,
         ),
         displayMedium: TextStyle(
           fontFamily: GoogleFonts.poppins().fontFamily,
