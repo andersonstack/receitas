@@ -1,16 +1,38 @@
-# receitas
+# Receitas
 
-A new Flutter project.
+Repositório destinado às atividades da disciplina de **Programação Orientada a Objetos (POO)**, utilizando a tecnologia **Flutter**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Como utilizar
 
-A few resources to get you started if this is your first Flutter project:
+Clone o repositório:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+git clone https://github.com/andersonstack/receitas.git
+cd receitas
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Instale as dependências do projeto:
+
+```bash
+flutter pub get
+```
+
+## 🧪 Execução do projeto
+Após instalar as dependências, você pode rodar o app em qualquer plataforma compatível com Flutter:
+
+* Linux
+* Windows
+* Android
+* iOS
+
+ℹ️ Este projeto foi desenvolvido e testado principalmente no Linux.
+
+```bash
+flutter create .
+```
+
+```bash
+flutter run -d <plataforma>
+```
