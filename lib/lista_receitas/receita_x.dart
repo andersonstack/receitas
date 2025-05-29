@@ -12,7 +12,7 @@ abstract class ReceitaX extends HookWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text(title, style: Theme.of(context).textTheme.displayLarge),
         leading: IconButton(
           icon: Icon(Icons.arrow_back_outlined),
           onPressed: () {
