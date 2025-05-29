@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import './receita_x.dart';
 
-class Receita02 extends ReceitaX {
+class Receita02 extends HookWidget {
   final String titlePage;
 
-  const Receita02({super.key, required this.titlePage})
-    : super(title: titlePage);
+  const Receita02({super.key, required this.titlePage});
 
   @override
-  Widget buildBody(BuildContext context) {
+  Widget build(BuildContext context) {
     final List<Map<String, dynamic>> bebidas = [
       {"nome": "La Fin Du Monde", "estilo": "Bock", "ibu": 65},
       {"nome": "Sapporo Premium", "estilo": "Sour Ale", "ibu": 54},
@@ -19,6 +17,15 @@ class Receita02 extends ReceitaX {
     final expandedItems = useState<Set<int>>({});
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text(titlePage, style: Theme.of(context).textTheme.displayLarge),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_outlined),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
       body: ListView.builder(
         itemCount: bebidas.length,
         itemBuilder: (BuildContext context, int index) {
