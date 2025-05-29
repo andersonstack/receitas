@@ -20,7 +20,7 @@ class MyApp extends HookWidget {
       initialRoute: "/home",
       routes: {
         "/home": (_) => Home(),
-        "/receita01": (_) => Receita01(titlePage: "Receita 01"),
+        "/receita01": (_) => Receita01(titlePage: "Bebidas"),
         "/receita02": (_) => Receita02(titlePage: "Receita 02"),
         "/receita03": (_) => Receita03(titlePage: "Receita 03"),
         "/receita04": (_) => Receita04(titlePage: "Receita 04"),
