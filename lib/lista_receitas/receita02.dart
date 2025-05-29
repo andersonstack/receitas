@@ -85,9 +85,14 @@ class MyBottomNavigationBar extends HookWidget {
 
   const MyBottomNavigationBar({super.key, required this.itemsBar});
 
+  void botaoFoiTocado(int index) {
+    print("Tocam no botão $index");
+  }
+
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      onTap: botaoFoiTocado,
       items:
           itemsBar.map((item) {
             return BottomNavigationBarItem(
