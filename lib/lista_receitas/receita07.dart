@@ -1,46 +1,8 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-
-class DataService {
-  final ValueNotifier<List<Map<String, dynamic>>> tableStateNotifier =
-      new ValueNotifier([]);
-
-  final List<VoidCallback> funcoesCarga;
-
-  DataService() : funcoesCarga = [] {
-    funcoesCarga.addAll([_carregarCafe, _carregarCervejas, _carregarNacoes]);
-  }
-
-  void carregar(index) {
-    funcoesCarga[index]();
-  }
-
-  void _carregarCervejas() {
-    tableStateNotifier.value = [
-      {"name": "La Fin Du Monde", "style": "Bock", "ibu": "65"},
-      {"name": "Sapporo Premiume", "style": "Sour Ale", "ibu": "54"},
-      {"name": "Duvel", "style": "Pilsner", "ibu": "82"},
-    ];
-  }
-
-  void _carregarCafe() {
-    tableStateNotifier.value = [
-      {"name": "Espresso", "region": "Itália", "intensity": "10"},
-      {"name": "Café do Cerrado", "region": "Brasil", "intensity": "7"},
-      {"name": "Kopi Luwak", "region": "Indonésia", "intensity": "9"},
-    ];
-  }
-
-  void _carregarNacoes() {
-    tableStateNotifier.value = [
-      {"name": "Brasil", "continent": "América do Sul", "population": "214M"},
-      {"name": "Japão", "continent": "Ásia", "population": "125M"},
-      {"name": "Alemanha", "continent": "Europa", "population": "83M"},
-    ];
-  }
-}
-
-final dataService = DataService();
+import '../service/service.dart';
 
 class Receita07 extends HookWidget {
   final String titlePage;
@@ -122,10 +84,14 @@ class DataTableWidget extends StatelessWidget {
     }
 
     final columsKeys = jsonObjects.first.keys.toList();
+    final columnsKeysFilter = columsKeys.where(
+      (element) => element.toLowerCase() != "uid",
+    );
+    final jsonObjectosFilter = jsonObjects.where((element) => element != "uid");
 
     return DataTable(
       columns:
-          columsKeys
+          columnsKeysFilter
               .map(
                 (key) => DataColumn(
                   label: Expanded(
@@ -138,11 +104,11 @@ class DataTableWidget extends StatelessWidget {
               )
               .toList(),
       rows:
-          jsonObjects
+          jsonObjectosFilter
               .map(
                 (obj) => DataRow(
                   cells:
-                      columsKeys
+                      columnsKeysFilter
                           .map((key) => DataCell(Text(obj[key].toString())))
                           .toList(),
                 ),
