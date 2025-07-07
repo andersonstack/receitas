@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import '../service/service.dart';
+import '../service/service_receita07.dart';
 
 class Receita07 extends HookWidget {
   final String titlePage;
