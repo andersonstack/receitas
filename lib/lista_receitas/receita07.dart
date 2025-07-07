@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import '../service/service.dart';
@@ -89,31 +87,34 @@ class DataTableWidget extends StatelessWidget {
     );
     final jsonObjectosFilter = jsonObjects.where((element) => element != "uid");
 
-    return DataTable(
-      columns:
-          columnsKeysFilter
-              .map(
-                (key) => DataColumn(
-                  label: Expanded(
-                    child: Text(
-                      key.toUpperCase(),
-                      style: Theme.of(context).textTheme.bodyMedium,
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: DataTable(
+        columns:
+            columnsKeysFilter
+                .map(
+                  (key) => DataColumn(
+                    label: Expanded(
+                      child: Text(
+                        key.toUpperCase(),
+                        style: Theme.of(context).textTheme.bodyMedium,
+                      ),
                     ),
                   ),
-                ),
-              )
-              .toList(),
-      rows:
-          jsonObjectosFilter
-              .map(
-                (obj) => DataRow(
-                  cells:
-                      columnsKeysFilter
-                          .map((key) => DataCell(Text(obj[key].toString())))
-                          .toList(),
-                ),
-              )
-              .toList(),
+                )
+                .toList(),
+        rows:
+            jsonObjectosFilter
+                .map(
+                  (obj) => DataRow(
+                    cells:
+                        columnsKeysFilter
+                            .map((key) => DataCell(Text(obj[key].toString())))
+                            .toList(),
+                  ),
+                )
+                .toList(),
+      ),
     );
   }
 }
