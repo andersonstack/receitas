@@ -24,20 +24,23 @@ class DataService {
 
   Future<void> _carregarCervejas() async {
     List<dynamic> jsonData = await loadJsonFromAssets('assets/data/beers.json');
-    tableStateNotifier.value = jsonData.cast<Map<String, dynamic>>();
+    tableStateNotifier.value =
+        jsonData.cast<Map<String, dynamic>>().take(5).toList();
   }
 
   Future<void> _carregarCafe() async {
     List<dynamic> jsonData = await loadJsonFromAssets(
       'assets/data/coffes.json',
     );
-    tableStateNotifier.value = jsonData.cast<Map<String, dynamic>>();
+    tableStateNotifier.value =
+        jsonData.cast<Map<String, dynamic>>().take(5).toList();
   }
 
   Future<void> _carregarNacoes() async {
     List<dynamic> jsonData = await loadJsonFromAssets(
       'assets/data/countrys.json',
     );
-    tableStateNotifier.value = jsonData.cast<Map<String, dynamic>>();
+    tableStateNotifier.value =
+        jsonData.cast<Map<String, dynamic>>().take(5).toList();
   }
 }
