@@ -1,0 +1,452 @@
+[
+  {
+    "id": 463,
+    "uid": "8821300d-9417-4d59-a7d6-a874373844b1",
+    "name": "Brasil",
+    "capital": "Brasília",
+    "population": 230260711,
+    "area_km2": 5771594.89,
+    "continent": "América do Sul"
+  },
+  {
+    "id": 966,
+    "uid": "f005bffd-b5c0-46f2-90e1-c87d510c6b22",
+    "name": "Estados Unidos",
+    "capital": "Washington, D.C.",
+    "population": 1235927944,
+    "area_km2": 5514106.24,
+    "continent": "América do Norte"
+  },
+  {
+    "id": 793,
+    "uid": "00a895d4-f90e-4107-9a2b-e0b5c919dada",
+    "name": "Canadá",
+    "capital": "Ottawa",
+    "population": 258675900,
+    "area_km2": 11195842.78,
+    "continent": "América do Norte"
+  },
+  {
+    "id": 698,
+    "uid": "b0249cac-1414-4a75-a31b-0ac8d8e2de15",
+    "name": "Alemanha",
+    "capital": "Berlim",
+    "population": 1269109691,
+    "area_km2": 9022502.46,
+    "continent": "Europa"
+  },
+  {
+    "id": 959,
+    "uid": "1827befa-e142-49e5-a5d7-efdbeb260959",
+    "name": "França",
+    "capital": "Paris",
+    "population": 86848154,
+    "area_km2": 11980432.82,
+    "continent": "Europa"
+  },
+  {
+    "id": 521,
+    "uid": "f072d256-414f-46c2-924d-6e574ffa9670",
+    "name": "Itália",
+    "capital": "Roma",
+    "population": 958131258,
+    "area_km2": 13670238.57,
+    "continent": "Europa"
+  },
+  {
+    "id": 143,
+    "uid": "afbbcae6-f90f-473a-84c0-305a96c26718",
+    "name": "Japão",
+    "capital": "Tóquio",
+    "population": 1325065868,
+    "area_km2": 5401432.88,
+    "continent": "ásia"
+  },
+  {
+    "id": 256,
+    "uid": "b098d82f-84c3-42ff-9dc8-42f34cd577c4",
+    "name": "China",
+    "capital": "Pequim",
+    "population": 1120641597,
+    "area_km2": 6047302.39,
+    "continent": "ásia"
+  },
+  {
+    "id": 244,
+    "uid": "870b123e-2391-431a-8f0c-b3afed0d08ef",
+    "name": "índia",
+    "capital": "Nova Deli",
+    "population": 578596428,
+    "area_km2": 3212437.39,
+    "continent": "ásia"
+  },
+  {
+    "id": 365,
+    "uid": "34f75bf8-849b-4351-a078-82395c5cfc07",
+    "name": "Austrália",
+    "capital": "Camberra",
+    "population": 1072441126,
+    "area_km2": 4191206.82,
+    "continent": "Oceania"
+  },
+  {
+    "id": 708,
+    "uid": "ea8322c7-286a-4766-ba03-e3a369eefe64",
+    "name": "México",
+    "capital": "Cidade do México",
+    "population": 434427287,
+    "area_km2": 15579939.14,
+    "continent": "América do Norte"
+  },
+  {
+    "id": 371,
+    "uid": "58a8720d-432e-4102-9fe5-46aeca3bc4ad",
+    "name": "Argentina",
+    "capital": "Buenos Aires",
+    "population": 772917946,
+    "area_km2": 10417875.04,
+    "continent": "América do Sul"
+  },
+  {
+    "id": 732,
+    "uid": "53b67153-605c-412f-92c3-6696f1801439",
+    "name": "Reino Unido",
+    "capital": "Londres",
+    "population": 933533771,
+    "area_km2": 10032337.54,
+    "continent": "Europa"
+  },
+  {
+    "id": 447,
+    "uid": "276f2b49-702b-42f1-88fd-c15f1719052d",
+    "name": "Rússia",
+    "capital": "Moscou",
+    "population": 1237536929,
+    "area_km2": 3436465.02,
+    "continent": "Europa"
+  },
+  {
+    "id": 644,
+    "uid": "4e11c1db-a5af-471e-9890-fc684e67080e",
+    "name": "áfrica do Sul",
+    "capital": "Pretória",
+    "population": 683534690,
+    "area_km2": 16704869.07,
+    "continent": "áfrica"
+  },
+  {
+    "id": 641,
+    "uid": "8518a150-9262-42b6-9d95-97723db51fa6",
+    "name": "Egito",
+    "capital": "Cairo",
+    "population": 366849656,
+    "area_km2": 1404400.57,
+    "continent": "áfrica"
+  },
+  {
+    "id": 228,
+    "uid": "fe76876c-9c4e-49ad-8bec-d4b4633337a6",
+    "name": "Espanha",
+    "capital": "Madri",
+    "population": 990237945,
+    "area_km2": 3872796.34,
+    "continent": "Europa"
+  },
+  {
+    "id": 187,
+    "uid": "c85eccab-f8c7-4413-9d2c-f0341cd9a0f4",
+    "name": "Portugal",
+    "capital": "Lisboa",
+    "population": 165838099,
+    "area_km2": 16125155.86,
+    "continent": "Europa"
+  },
+  {
+    "id": 133,
+    "uid": "64d0348d-674e-407f-9445-c3be82fb2378",
+    "name": "Coreia do Sul",
+    "capital": "Seul",
+    "population": 1043279004,
+    "area_km2": 10212875.76,
+    "continent": "ásia"
+  },
+  {
+    "id": 424,
+    "uid": "7b976e8b-b3b7-4718-97f8-fc7c086bbbd2",
+    "name": "Nova Zelândia",
+    "capital": "Wellington",
+    "population": 629268423,
+    "area_km2": 7789095.0,
+    "continent": "Oceania"
+  },
+  {
+    "id": 230,
+    "uid": "f8948697-3d73-4e4c-b492-d282a09003c9",
+    "name": "Suécia",
+    "capital": "Estocolmo",
+    "population": 771737598,
+    "area_km2": 1621898.56,
+    "continent": "Europa"
+  },
+  {
+    "id": 918,
+    "uid": "e845197b-a5e5-403f-8cf7-80a6cba63136",
+    "name": "Noruega",
+    "capital": "Oslo",
+    "population": 67755508,
+    "area_km2": 7468793.7,
+    "continent": "Europa"
+  },
+  {
+    "id": 846,
+    "uid": "af8676c8-658f-4572-823e-1a63bce3e792",
+    "name": "Dinamarca",
+    "capital": "Copenhague",
+    "population": 864933655,
+    "area_km2": 1265152.47,
+    "continent": "Europa"
+  },
+  {
+    "id": 486,
+    "uid": "b430e7ae-fee2-42ad-8d2d-48bc549d03fd",
+    "name": "Finlândia",
+    "capital": "Helsinque",
+    "population": 899563607,
+    "area_km2": 13735396.24,
+    "continent": "Europa"
+  },
+  {
+    "id": 199,
+    "uid": "2b2b63ec-d2e5-4925-911f-b46aa7ed6729",
+    "name": "Pol\u00f4nia",
+    "capital": "Varsóvia",
+    "population": 545987,
+    "area_km2": 12450915.34,
+    "continent": "Europa"
+  },
+  {
+    "id": 471,
+    "uid": "d9e96d4a-ee74-43d3-b892-fb3b82fe5ea8",
+    "name": "Ucrânia",
+    "capital": "Quieve",
+    "population": 953204355,
+    "area_km2": 13580093.45,
+    "continent": "Europa"
+  },
+  {
+    "id": 896,
+    "uid": "dcee4270-076f-4707-9552-cdb5ec1b3fb1",
+    "name": "Tailândia",
+    "capital": "Bangcoc",
+    "population": 1059256572,
+    "area_km2": 6003708.95,
+    "continent": "ásia"
+  },
+  {
+    "id": 591,
+    "uid": "d4416a45-73de-420c-afcc-52a0f202bd76",
+    "name": "Indonésia",
+    "capital": "Jacarta",
+    "population": 624754686,
+    "area_km2": 4780028.85,
+    "continent": "ásia"
+  },
+  {
+    "id": 968,
+    "uid": "db2bbf2f-dcba-49f2-955d-edd0b730781a",
+    "name": "Malásia",
+    "capital": "Kuala Lumpur",
+    "population": 326147522,
+    "area_km2": 3425287.32,
+    "continent": "ásia"
+  },
+  {
+    "id": 628,
+    "uid": "8b033899-ead7-4f00-8111-6628fff80e43",
+    "name": "Singapura",
+    "capital": "Singapura",
+    "population": 795118612,
+    "area_km2": 3177014.99,
+    "continent": "ásia"
+  },
+  {
+    "id": 510,
+    "uid": "3015ba71-fe4a-4921-aaba-809cbe506389",
+    "name": "Irã",
+    "capital": "Teerã",
+    "population": 960897004,
+    "area_km2": 1362327.89,
+    "continent": "ásia"
+  },
+  {
+    "id": 909,
+    "uid": "d0cba4cc-3220-4253-b734-e066fe5ccf98",
+    "name": "Iraque",
+    "capital": "Bagdá",
+    "population": 716347120,
+    "area_km2": 16280352.38,
+    "continent": "ásia"
+  },
+  {
+    "id": 260,
+    "uid": "fb78da2a-c3b5-487d-a875-fe21a19882dc",
+    "name": "Arábia Saudita",
+    "capital": "Riad",
+    "population": 1082377070,
+    "area_km2": 11592228.77,
+    "continent": "ásia"
+  },
+  {
+    "id": 287,
+    "uid": "30f8f5f0-8d9f-41ac-a9ff-c192117c0d61",
+    "name": "Turquia",
+    "capital": "Ancara",
+    "population": 228824374,
+    "area_km2": 15797757.58,
+    "continent": "ásia"
+  },
+  {
+    "id": 735,
+    "uid": "9929dd70-1a4d-4d5a-a205-247e40cf42da",
+    "name": "Grécia",
+    "capital": "Atenas",
+    "population": 1013100718,
+    "area_km2": 13371082.4,
+    "continent": "Europa"
+  },
+  {
+    "id": 856,
+    "uid": "7faeafc8-c78e-48ad-b782-188c17ae8519",
+    "name": "Israel",
+    "capital": "Jerusalém",
+    "population": 889063442,
+    "area_km2": 8150332.1,
+    "continent": "ásia"
+  },
+  {
+    "id": 284,
+    "uid": "16af6979-31a9-4923-98cf-9c3c07bd69f2",
+    "name": "Paquistão",
+    "capital": "Islamabad",
+    "population": 211921349,
+    "area_km2": 13690438.11,
+    "continent": "ásia"
+  },
+  {
+    "id": 627,
+    "uid": "35fc31d5-cdeb-463e-9db5-a38715d8822b",
+    "name": "Bangladesh",
+    "capital": "Daca",
+    "population": 357613508,
+    "area_km2": 14184042.93,
+    "continent": "ásia"
+  },
+  {
+    "id": 647,
+    "uid": "b5b204f2-d26e-4be4-aea6-d83d5dd14426",
+    "name": "Vietnã",
+    "capital": "Hanói",
+    "population": 860979742,
+    "area_km2": 7539995.02,
+    "continent": "ásia"
+  },
+  {
+    "id": 609,
+    "uid": "f079c310-2939-487a-9534-ad8219be613d",
+    "name": "Filipinas",
+    "capital": "Manila",
+    "population": 195239328,
+    "area_km2": 6510899.57,
+    "continent": "América do Norte"
+  },
+  {
+    "id": 278,
+    "uid": "82913033-adc0-4eb3-9bfa-10784921e5c9",
+    "name": "Chile",
+    "capital": "Santiago",
+    "population": 714894363,
+    "area_km2": 6379614.67,
+    "continent": "América do Sul"
+  },
+  {
+    "id": 138,
+    "uid": "b3c15105-5637-4853-9e2f-b16c428c2450",
+    "name": "Peru",
+    "capital": "Lima",
+    "population": 643924265,
+    "area_km2": 3350770.04,
+    "continent": "América do Sul"
+  },
+  {
+    "id": 462,
+    "uid": "7f0d94bd-41b6-4f5c-8ea0-8c34323b9699",
+    "name": "Col\u00f4mbia",
+    "capital": "Bogotá",
+    "population": 155738883,
+    "area_km2": 10970097.46,
+    "continent": "América do Sul"
+  },
+  {
+    "id": 596,
+    "uid": "3f63e8c4-5f4c-4c4d-b10d-a078923898fa",
+    "name": "Venezuela",
+    "capital": "Caracas",
+    "population": 21781290,
+    "area_km2": 11689068.63,
+    "continent": "América do Sul"
+  },
+  {
+    "id": 909,
+    "uid": "a8e16b37-9e76-49a3-816b-43cc5db77b7a",
+    "name": "Cuba",
+    "capital": "Havana",
+    "population": 153858951,
+    "area_km2": 4660591.32,
+    "continent": "América do Norte"
+  },
+  {
+    "id": 464,
+    "uid": "786b28cb-3042-4a8f-817a-1eb65cb92b0d",
+    "name": "Haiti",
+    "capital": "Porto Príncipe",
+    "population": 208858169,
+    "area_km2": 10309640.67,
+    "continent": "América do Norte"
+  },
+  {
+    "id": 288,
+    "uid": "5ba09f09-56e3-4f38-b2d8-f9cf76b2fafe",
+    "name": "Nigéria",
+    "capital": "Abuja",
+    "population": 1385462866,
+    "area_km2": 7315588.17,
+    "continent": "áfrica"
+  },
+  {
+    "id": 149,
+    "uid": "6384d2da-0825-4229-b00e-eab1a06e8949",
+    "name": "Qu\u00eania",
+    "capital": "Nairóbi",
+    "population": 484124499,
+    "area_km2": 690369.45,
+    "continent": "áfrica"
+  },
+  {
+    "id": 773,
+    "uid": "5f16b860-e8fd-4d30-af88-83d56f2d838f",
+    "name": "Marrocos",
+    "capital": "Rabat",
+    "population": 267151658,
+    "area_km2": 6469791.63,
+    "continent": "áfrica"
+  },
+  {
+    "id": 815,
+    "uid": "5797bed9-daa3-4679-9fe9-995916df9ce8",
+    "name": "Tunísia",
+    "capital": "Túnis",
+    "population": 773856371,
+    "area_km2": 3231208.67,
+    "continent": "áfrica"
+  }
+]
