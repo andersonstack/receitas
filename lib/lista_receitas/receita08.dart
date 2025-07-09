@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import '../service/service_receita08.dart';
@@ -24,7 +22,17 @@ class Receita08 extends HookWidget {
       body: ValueListenableBuilder(
         valueListenable: dataService.tableStateNotifier,
         builder: (_, value, __) {
-          return DataTableWidget(jsonObjects: value['dataObjects']);
+          switch (value['status']) {
+            case TableStatus.idle:
+              return Center(child: Text("Toque em algum botão"));
+            case TableStatus.loading:
+              return CircularProgressIndicator();
+            case TableStatus.ready:
+              return DataTableWidget(jsonObjects: value['dataObjects']);
+            case TableStatus.error:
+              return Text("Erro no servidor");
+          }
+          return LinearProgressIndicator();
         },
       ),
       bottomNavigationBar: MyBottomNavigationBar(
