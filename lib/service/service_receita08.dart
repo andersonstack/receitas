@@ -25,33 +25,44 @@ class DataService {
     };
   }
 
-  void _carregarCervejas() {
+  void _carregarCervejas({int counter = 10}) {
     rootBundle.loadString("assets/data/beers.json").then((jsonString) {
       var beersJson = jsonDecode(jsonString);
-      // var beersJsonTake = [];
+      var beersJsonTake = [];
+      for (int i = 0; i < counter; i++) {
+        beersJsonTake.add(beersJson[i]);
+      }
       tableStateNotifier.value = {
         'stauts': TableStatus.ready,
-        'dataObjects': beersJson,
+        'dataObjects': beersJsonTake,
       };
     });
   }
 
-  void _carregarCafe() async {
+  void _carregarCafe({int counter = 10}) async {
     rootBundle.loadString("assets/data/coffees.json").then((jsonString) {
       var coffeesJson = jsonDecode(jsonString);
+      var coffeesJsonTake = [];
+      for (int i = 0; i < counter; i++) {
+        coffeesJsonTake.add(coffeesJson[i]);
+      }
       tableStateNotifier.value = {
         'stauts': TableStatus.ready,
-        'dataObjects': coffeesJson,
+        'dataObjects': coffeesJsonTake,
       };
     });
   }
 
-  void _carregarNacoes() {
+  void _carregarNacoes({int counter = 10}) {
     rootBundle.loadString("assets/data/countries.json").then((jsonString) {
       var countriesJson = jsonDecode(jsonString);
+      var countriesJsonTake = [];
+      for (int i = 0; i < counter; i++) {
+        countriesJsonTake.add(countriesJson[i]);
+      }
       tableStateNotifier.value = {
         'status': TableStatus.ready,
-        'dataObjects': countriesJson,
+        'dataObjects': countriesJsonTake,
       };
     });
   }
