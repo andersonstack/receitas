@@ -30,7 +30,7 @@ class DataService {
 
   Future<void> _carregarCafe() async {
     List<dynamic> jsonData = await loadJsonFromAssets(
-      'assets/data/coffes.json',
+      'assets/data/coffees.json',
     );
     tableStateNotifier.value =
         jsonData.cast<Map<String, dynamic>>().take(5).toList();
@@ -38,7 +38,7 @@ class DataService {
 
   Future<void> _carregarNacoes() async {
     List<dynamic> jsonData = await loadJsonFromAssets(
-      'assets/data/countrys.json',
+      'assets/data/countries.json',
     );
     tableStateNotifier.value =
         jsonData.cast<Map<String, dynamic>>().take(5).toList();
