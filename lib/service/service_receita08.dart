@@ -20,12 +20,14 @@ class DataService {
   void carregar(index) {
     funcoesCarga[index]();
     tableStateNotifier.value = {
-      'stauts': TableStatus.loading,
+      'status': TableStatus.loading,
       'dataObjects': [],
     };
   }
 
   void _carregarCervejas({int counter = 10}) {
+    // ignore: avoid_print
+    print("cervejas");
     rootBundle.loadString("assets/data/beers.json").then((jsonString) {
       var beersJson = jsonDecode(jsonString);
       var beersJsonTake = [];
@@ -33,7 +35,7 @@ class DataService {
         beersJsonTake.add(beersJson[i]);
       }
       tableStateNotifier.value = {
-        'stauts': TableStatus.ready,
+        'status': TableStatus.ready,
         'dataObjects': beersJsonTake,
       };
     });
@@ -47,7 +49,7 @@ class DataService {
         coffeesJsonTake.add(coffeesJson[i]);
       }
       tableStateNotifier.value = {
-        'stauts': TableStatus.ready,
+        'status': TableStatus.ready,
         'dataObjects': coffeesJsonTake,
       };
     });
