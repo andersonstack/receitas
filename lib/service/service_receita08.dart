@@ -45,6 +45,22 @@ class DataService {
     ]);
   }
 
+  void ordenarPor(String campo) {
+    List<dynamic> dataAtual = List.from(
+      tableStateNotifier.value['dataObjects'],
+    );
+    dataAtual.sort((a, b) {
+      final valA = a[campo]?.toString().toLowerCase() ?? '';
+      final valB = b[campo]?.toString().toLowerCase() ?? '';
+      return valA.compareTo(valB);
+    });
+
+    tableStateNotifier.value = {
+      ...tableStateNotifier.value,
+      'dataObjects': dataAtual,
+    };
+  }
+
   void carregar(int index) {
     _currentCount = 0;
     _fullData = [];

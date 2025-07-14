@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:receitas/lista_receitas/receita10.dart';
 import './styles/theme_data.dart';
 import './lista_receitas/receita01.dart';
 import './lista_receitas/receita02.dart';
@@ -34,6 +35,7 @@ class MyApp extends HookWidget {
         "/receita08": (_) => Receita08(titlePage: "Receita 08"),
         "/receita08A": (_) => Receita08A(titlePage: "Receita 08A"),
         "/receita09": (_) => Receita09(titlePage: "Receita 09"),
+        "/receita10": (_) => Receita10(titlePage: "Receita 10"),
       },
     );
   }
@@ -53,6 +55,7 @@ class Home extends HookWidget {
       {'rota': '/receita08'},
       {'rota': '/receita08A'},
       {'rota': '/receita09'},
+      {'rota': '/receita10'},
     ];
 
     return Scaffold(
@@ -73,7 +76,7 @@ class Home extends HookWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "${rota.replaceAll(rota, "Receita ")} ${rota[rota.length - 1]}",
+                      rota.replaceAll("/", "").toString().toUpperCase(),
                       style: Theme.of(context).textTheme.displayMedium,
                     ),
                     IconButton(
