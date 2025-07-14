@@ -10,6 +10,7 @@ import './lista_receitas/receita06.dart';
 import './lista_receitas/receita07.dart';
 import './lista_receitas/receita08.dart';
 import './lista_receitas/receita08_a.dart';
+import './lista_receitas/receita09.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,6 +33,7 @@ class MyApp extends HookWidget {
         "/receita07": (_) => Receita07(titlePage: "Receita 07"),
         "/receita08": (_) => Receita08(titlePage: "Receita 08"),
         "/receita08A": (_) => Receita08A(titlePage: "Receita 08A"),
+        "/receita09": (_) => Receita09(titlePage: "Receita 09"),
       },
     );
   }
@@ -50,6 +52,7 @@ class Home extends HookWidget {
       {'rota': '/receita07'},
       {'rota': '/receita08'},
       {'rota': '/receita08A'},
+      {'rota': '/receita09'},
     ];
 
     return Scaffold(

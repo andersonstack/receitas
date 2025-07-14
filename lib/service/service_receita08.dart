@@ -19,8 +19,23 @@ class DataService {
 
   List<dynamic> _fullData = [];
   int _currentCount = 0;
-  static const int _pageSize = 5;
+  static const int _pageSize = 10;
   ItemType _currentType = ItemType.none;
+
+  static const MAX_N_ITEMS = 15;
+  static const MIN_N_ITEMS = 3;
+  static const DEFAULT_N_ITEMS = 7;
+
+  int _numberOfItems = DEFAULT_N_ITEMS;
+
+  set numberOfItems(n) {
+    _numberOfItems =
+        n < 0
+            ? MIN_N_ITEMS
+            : n > MAX_N_ITEMS
+            ? MAX_N_ITEMS
+            : n;
+  }
 
   DataService() : funcoesCarga = [] {
     funcoesCarga.addAll([
@@ -47,15 +62,15 @@ class DataService {
   void carregarMais() {
     if (_fullData.isEmpty || _currentCount >= _fullData.length) return;
 
-    final nextCount = (_currentCount + _pageSize).clamp(0, _fullData.length);
-
-    _currentCount = nextCount;
+    final start = _currentCount;
+    final end = (_currentCount + _pageSize).clamp(0, _fullData.length);
+    _currentCount = end;
 
     tableStateNotifier.value = {
       'status': TableStatus.ready,
       'dataObjects': [
         ...tableStateNotifier.value['dataObjects'],
-        ..._fullData.sublist(_currentCount, nextCount),
+        ..._fullData.sublist(start, end),
       ],
       'itemType': _currentType,
     };
