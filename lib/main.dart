@@ -76,7 +76,7 @@ class Home extends HookWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "${rota.replaceAll(rota, "Receita ")} ${rota[rota.length - 1]}",
+                      rota.replaceAll("/", "").toString().toUpperCase(),
                       style: Theme.of(context).textTheme.displayMedium,
                     ),
                     IconButton(
